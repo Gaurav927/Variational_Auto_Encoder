@@ -20,4 +20,5 @@ The intuition behind this framework—called “maximum likelihood”— is that
 
 ## Variational Auto Encoder
 we first sample a large number of z values { z 1 , ..., z n } , and compute ![Image](http://latex.codecogs.com/gif.latex?P%28X%29%20%5Capprox%20%5Cfrac%7B1%7D%7Bn%7D%20%5Csum%20P%28X%7Cz%29)
-In practice, for most z, P ( X | z ) will be nearly zero, and hence contribute almost nothing to our estimate of P ( X ) .
+In practice, for most z, P ( X | z ) will be nearly zero, and hence contribute almost nothing to our estimate of P ( X ).
+The key idea behind the variational autoencoder is to attempt to sample values of z that are likely to have produced X, and compute P ( X ) just from those.
