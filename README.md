@@ -19,3 +19,5 @@ X . We wish to optimize θ such that we can sample z from P ( z ) and, with high
 The intuition behind this framework—called “maximum likelihood”— is that if the model is likely to produce training set samples, then it is also likely to produce similar samples, and unlikely to produce dissimilar ones.
 
 ## Variational Auto Encoder
+we first sample a large number of z values { z 1 , ..., z n } , and compute P ( X ) ≈ n 1 ∑ i P ( X | z i ) . The pro
+In practice, for most z, P ( X | z ) will be nearly zero, and hence contribute almost nothing to our estimate of P ( X ) .
