@@ -14,3 +14,5 @@ X . We wish to optimize θ such that we can sample z from P ( z ) and, with high
 ## Objective function 
 ![](http://latex.codecogs.com/gif.latex?P%28X%29%20%3D%20%5Cint%20P%28X%7Cz%3B%5CTheta%20%29P%28z%29dz)
 The intuition behind this framework—called “maximum likelihood”— is that if the model is likely to produce training set samples, then it is also likely to produce similar samples, and unlikely to produce dissimilar ones.
+
+## Variational Auto Encoder
