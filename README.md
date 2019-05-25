@@ -36,3 +36,4 @@ we are maximizing log P ( X ) while simultaneously minimizing D [ Q ( z | X )k| 
 P ( z | X ) is not something we can compute analytically: it describes the val-
 ues of z that are likely to give rise to a sample like X.Assuming we use an arbitrarily 
 high-capacity model for Q ( z | x ) ,then Q ( z | x ) will hopefully actually match P ( z | X )
+in which case this KL-divergence term will be zero, and we will be directly optimizing log P ( X ) .
