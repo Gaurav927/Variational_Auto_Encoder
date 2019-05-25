@@ -32,6 +32,6 @@ this term will become small if Q is high-capacity )
 We can visualize Q(z|X) as an encoder, P(X|z) as decoder
 z|X ~ P(z|X) (truth), approximating distribution of z|X with Q(z|X)
 
-So in the objective function we are trying to maximize log(P(X)) along 
-with minimizing the D[Q(z|X) || P(z|X)]
-
+we are maximizing log P ( X ) while simultaneously minimizing D [ Q ( z | X )k| P ( z | X )] .
+P ( z | X ) is not something we can compute analytically: it describes the val-
+ues of z that are likely to give rise to a sample like X
