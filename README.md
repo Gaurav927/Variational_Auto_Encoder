@@ -28,3 +28,5 @@ This equation serves is the core of the variational autoencoder,
 the left hand side has the quantity we want to maximize: log P(X) 
 (plus an error term, which makes Q produce z’s that can reproduce a given X
 this term will become small if Q is high-capacity )
+
+We can visualize Q(z|X) as an encoder, P(X|z) as decoder
