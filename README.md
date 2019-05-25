@@ -32,7 +32,7 @@ this term will become small if Q is high-capacity )
 We can visualize Q(z|X) as an encoder, P(X|z) as decoder
 z|X ~ P(z|X) (truth), approximating distribution of z|X with Q(z|X)
 
-we are maximizing log P ( X ) while simultaneously minimizing D [ Q ( z | X )k| P ( z | X )] .
+we are maximizing log P ( X ) while simultaneously minimizing D [ Q ( z | X )|| P ( z | X )] .
 P ( z | X ) is not something we can compute analytically: it describes the val-
 ues of z that are likely to give rise to a sample like X.Assuming we use an arbitrarily 
 high-capacity model for Q ( z | x ) ,then Q ( z | x ) will hopefully actually match P ( z | X )
@@ -42,5 +42,5 @@ transformation of Normal independent variables. The usual choice is to say that 
 N ( z | μ ( X; θ ) , Σ ( X; θ )) ,In practice, μ and Σ are again implemented via neural networks,
 and Σ is constrained to be a diagonal matrix.
 
-The last term— D [ Q ( z | X )k P ( z )] —is now a KL-divergence between
+The last term— D [ Q ( z | X )|| P ( z )] —is now a KL-divergence between
 two multivariate Gaussian distributions
