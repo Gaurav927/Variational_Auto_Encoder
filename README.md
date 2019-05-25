@@ -39,4 +39,5 @@ high-capacity model for Q ( z | x ) ,then Q ( z | x ) will hopefully actually ma
 in which case this KL-divergence term will be zero, and we will be directly optimizing log P ( X ) .
 Note that P(z|X) is intractable distribution but any distribution can be approximated by suitable 
 transformation of Normal independent variables. The usual choice is to say that Q ( z | X ) =
-N ( z | μ ( X; θ ) , Σ ( X; θ )) ,
+N ( z | μ ( X; θ ) , Σ ( X; θ )) ,In practice, μ and Σ are again implemented via neural networks,
+and Σ is constrained to be a diagonal matrix.
