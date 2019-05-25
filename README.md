@@ -11,8 +11,8 @@ many) settings of the latent variables which causes the model to generate someth
 
 
 Then, say we have a family of deterministic functions f ( z; θ ) , parameterized by a vector θ in some space Θ, where 
-f : Z × Θ → X . f is deterministic, but if z is random and θ is fixed, then f ( z; θ ) is a random variable in the space
-X . We wish to optimize θ such that we can sample z from P ( z ) and, with high probability, f ( z; θ ) will be like the X’s in our dataset
+f : Z × Θ → X . f is deterministic, but if z is random and θ is fixed, then f (z; θ) is a random variable in the space
+X . We wish to optimize θ such that we can sample z from P(z) and, with high probability, f ( z; θ ) will be like the X’s in our dataset
 
 ## Objective function 
 ![](http://latex.codecogs.com/gif.latex?P%28X%29%20%3D%20%5Cint%20P%28X%7Cz%3B%5CTheta%20%29P%28z%29dz)
