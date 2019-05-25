@@ -41,3 +41,6 @@ Note that P(z|X) is intractable distribution but any distribution can be approxi
 transformation of Normal independent variables. The usual choice is to say that Q ( z | X ) =
 N ( z | μ ( X; θ ) , Σ ( X; θ )) ,In practice, μ and Σ are again implemented via neural networks,
 and Σ is constrained to be a diagonal matrix.
+
+The last term— D [ Q ( z | X )k P ( z )] —is now a KL-divergence between
+two multivariate Gaussian distributions
