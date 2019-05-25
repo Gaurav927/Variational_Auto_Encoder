@@ -30,3 +30,8 @@ the left hand side has the quantity we want to maximize: log P(X)
 this term will become small if Q is high-capacity )
 
 We can visualize Q(z|X) as an encoder, P(X|z) as decoder
+z|X ~ P(z|X) (truth), approximating distribution of z|X with Q(z|X)
+
+So in the objective function we are trying to maximize log(P(X)) along 
+with minimizing the D[Q(z|X) || P(z|X)]
+
