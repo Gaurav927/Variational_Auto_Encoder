@@ -21,28 +21,4 @@ X . We wish to optimize θ such that we can sample z from P(z) and, with high pr
 The intuition behind this framework—called “maximum likelihood”— is that if the model is likely to produce training set samples, then it is also likely to produce similar samples, and unlikely to produce dissimilar ones.
 
 ## Variational Auto Encoder
-we first sample a large number of z values { z 1 , ..., z n } , and compute ![Image](http://latex.codecogs.com/gif.latex?P%28X%29%20%5Capprox%20%5Cfrac%7B1%7D%7Bn%7D%20%5Csum%20P%28X%7Cz%29)
-In practice, for most z, P ( X | z ) will be nearly zero, and hence contribute almost nothing to our estimate of P ( X ).
-The key idea behind the variational autoencoder is to attempt to sample values of z that are likely to have produced X, and compute P ( X ) just from those. This means that we need anew function Q ( z | X ) which can take a value of X and give us a distribution over z values that are likely to produce X. Hopefully the space of z values that are likely under Q will be much smaller than the space of all z’s that are likely under the prior P ( z )
-
-
-This equation serves is the core of the variational autoencoder,
-the left hand side has the quantity we want to maximize: log P(X) 
-(plus an error term, which makes Q produce z’s that can reproduce a given X
-this term will become small if Q is high-capacity )
-
-We can visualize Q(z|X) as an encoder, P(X|z) as decoder
-z|X ~ P(z|X) (truth), approximating distribution of z|X with Q(z|X)
-
-we are maximizing log P ( X ) while simultaneously minimizing D [Q(z|X)||P(z|X)] .
-P ( z | X ) is not something we can compute analytically: it describes the val-
-ues of z that are likely to give rise to a sample like X.Assuming we use an arbitrarily 
-high-capacity model for Q ( z | x ) ,then Q ( z | x ) will hopefully actually match P ( z | X )
-in which case this KL-divergence term will be zero, and we will be directly optimizing log P ( X ) .
-Note that P(z|X) is intractable distribution but any distribution can be approximated by suitable 
-transformation of Normal independent variables. The usual choice is to say that Q ( z | X ) =
-N ( z | μ ( X; θ ) , Σ ( X; θ )) ,In practice, μ and Σ are again implemented via neural networks,
-and Σ is constrained to be a diagonal matrix.
-
-The last term— D [Q(z|X)||P(z)] is now a KL-divergence between
-two multivariate Gaussian distributions
+![1](https://user-images.githubusercontent.com/21220616/58450615-4a34da80-812d-11e9-94f4-731c858e72cc.png)
