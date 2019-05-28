@@ -22,3 +22,5 @@ The intuition behind this framework—called “maximum likelihood”— is that
 
 ## Variational Auto Encoder
 ![1](https://user-images.githubusercontent.com/21220616/58450615-4a34da80-812d-11e9-94f4-731c858e72cc.png)
+![2](https://user-images.githubusercontent.com/21220616/58450659-7b150f80-812d-11e9-983d-e19aedd3498b.png)
+
